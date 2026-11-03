@@ -1,0 +1,4 @@
+try=1 wall=16.028916452 "run_s": 16.004 "net_pnl": -1511.98 "attempts": 1 "hung_attempts_s": []  0
+try=2 wall=18.027149997 "run_s": 18.003 "net_pnl": -1511.98 "attempts": 1 "hung_attempts_s": []  0
+try=3 wall=18.028768287 "run_s": 18.004 "net_pnl": -1511.98 "attempts": 1 "hung_attempts_s": []  0
+try=4 wall=18.027482348 "run_s": 18.003 "net_pnl": -1511.98 "attempts": 1 "hung_attempts_s": []  0

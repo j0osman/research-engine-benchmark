@@ -1,0 +1,42 @@
+{"step":"s01_place","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":30,"secs":0,"start":"2026-10-25T10:27:55Z","end":"2026-10-25T10:27:55Z"}
+{"step":"s02_apt","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":300,"secs":12,"start":"2026-10-25T10:27:55Z","end":"2026-10-25T10:28:07Z"}
+{"step":"s03_governor","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":5,"secs":0,"start":"2026-10-25T10:28:07Z","end":"2026-10-25T10:28:07Z"}
+{"step":"s04_venv","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":240,"secs":3,"start":"2026-10-25T10:28:07Z","end":"2026-10-25T10:28:10Z"}
+{"step":"s05_dotnet","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":120,"secs":12,"start":"2026-10-25T10:28:10Z","end":"2026-10-25T10:28:22Z"}
+{"step":"s06_conda","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":420,"secs":20,"start":"2026-10-25T10:28:22Z","end":"2026-10-25T10:28:42Z"}
+{"step":"s07_build_research","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":600,"secs":9,"start":"2026-10-25T10:28:42Z","end":"2026-10-25T10:28:51Z"}
+{"step":"s08_build_server","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":600,"secs":48,"start":"2026-10-25T10:28:51Z","end":"2026-10-25T10:29:39Z"}
+{"step":"s09_data","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":900,"secs":47,"start":"2026-10-25T10:29:39Z","end":"2026-10-25T10:30:26Z"}
+{"step":"s10_provenance","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":60,"secs":0,"start":"2026-10-25T10:30:26Z","end":"2026-10-25T10:30:26Z"}
+{"step":"w00_ctest","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":600,"secs":43,"start":"2026-10-25T10:38:33Z","end":"2026-10-25T10:39:16Z"}
+{"step":"w01_boundary","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":60,"secs":1,"start":"2026-10-25T10:39:16Z","end":"2026-10-25T10:39:17Z"}
+{"step":"w02_abionly","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":60,"secs":1,"start":"2026-10-25T10:39:17Z","end":"2026-10-25T10:39:18Z"}
+{"step":"w03_sweep","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":600,"secs":452,"start":"2026-10-25T10:39:18Z","end":"2026-10-25T10:46:50Z"}
+{"step":"w06_srv_variance","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":180,"secs":35,"start":"2026-10-25T10:46:50Z","end":"2026-10-25T10:47:25Z"}
+{"step":"w07_pinning","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":240,"secs":30,"start":"2026-10-25T10:47:25Z","end":"2026-10-25T10:47:55Z"}
+{"step":"w08_buffer","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":420,"secs":122,"start":"2026-10-25T10:47:55Z","end":"2026-10-25T10:49:57Z"}
+{"step":"w11_determinism","status":"ok","rc":0,"runs":40,"failed_runs":0,"estimate_s":600,"secs":76,"start":"2026-10-25T10:49:57Z","end":"2026-10-25T10:51:13Z"}
+{"step":"w12_stress","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":300,"secs":41,"start":"2026-10-25T10:51:13Z","end":"2026-10-25T10:51:54Z"}
+{"step":"f01_bars_50k","status":"aborted_harness","start":"2026-10-25T10:51:54Z","end":"2026-10-25T11:03:27Z","note":"first LEAN run finished its backtest at 10:52:08 but dotnet was stopped by SIGTTOU (terminal restore under timeout); harness fixed with stdin from /dev/null; the 10 records from this attempt are kept in fourway_f01_attempt1.jsonl"}
+{"step":"f01_bars_50k","status":"ok","rc":0,"runs":60,"failed_runs":0,"estimate_s":600,"secs":100,"start":"2026-10-25T11:03:27Z","end":"2026-10-25T11:05:07Z"}
+{"step":"f02_bars_500k","status":"ok","rc":0,"runs":36,"failed_runs":0,"estimate_s":2400,"secs":529,"start":"2026-10-25T11:05:07Z","end":"2026-10-25T11:13:56Z"}
+{"event":"mid_run_patch","at":"2026-10-25T11:42:30Z","during":"f03_breadth","files":["bench/comparison/lean_project/main.py (11:31:25: UTC data time zone, end date 2021-01-01)","reference-python/reamer_research_binding.py (closed-trade buffer sized from summary count, was fixed 65536)"],"originals":"*.orig-4.6.0"}
+{"event":"mid_run_patch","at":"2026-10-25T12:01:01Z","during":"f03_breadth","files":["bench/comparison/bench_runners/lean_portfolio_runner.py (11:59:33: kill and retry an attempt stuck >=45 s on one time step, max 5; attempts and hung_attempts_s in the result line)"],"killed":"dotnet pid 73876, LEAN pf10 rep1 realistic, deadlocked on first time step since 11:15:35, LEAN isolator stopped it 11:35:35, process never exited","originals":"*.orig-4.6.0"}
+{"event":"mid_run_patch","at":"2026-10-25T12:07:28Z","during":"f03_breadth","files":["lean_portfolio_runner.py: MAX_ATTEMPTS 5 -> 10 after pf10 rep2 realistic needed 4"]}
+{"event":"budget_cut","at":"2026-10-25T12:30:42Z","during":"f03_breadth","note":"operator cut to keep a 2 h budget buffer: competitors (backtrader, nautilus_p) at 2M/5M, f07 stock nautilus 2M, LEAN at 100 tickers. Box runners guarded by <workdir>/BUDGET_CUT (originals *.pre-cut); those rows record rc!=0 with a skipped message and are excluded, not failures"}
+{"step":"f03_breadth","status":"partial","rc":0,"runs":40,"failed_runs":3,"estimate_s":3000,"secs":5889,"start":"2026-10-25T11:13:56Z","end":"2026-10-25T12:52:05Z"}
+{"event":"budget_cut","at":"2026-10-25T13:19:38Z","during":"f04_parallel","note":"LEAN K=32: all 32 copies stalled after Launching analysis from 12:54 (0 bars, first time step) - same start-up hang as breadth; killed by PID with user approval. LEAN K=64 skipped via lean_runner.py guard on LEAN_RUN_DIR /par/lean-64 (original lean_runner.py.pre-cut)"}
+{"step":"f04_parallel","status":"partial","rc":0,"runs":20,"failed_runs":2,"estimate_s":1500,"secs":1696,"start":"2026-10-25T12:52:05Z","end":"2026-10-25T13:20:21Z"}
+{"step":"w10_res_variance","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":3000,"secs":0,"start":"2026-10-25T13:20:21Z","end":"2026-10-25T13:20:21Z"}
+{"step":"f05_bars_2m","status":"partial","rc":0,"runs":16,"failed_runs":8,"estimate_s":2700,"secs":56,"start":"2026-10-25T13:20:21Z","end":"2026-10-25T13:21:17Z"}
+{"step":"f06_bars_5m","status":"partial","rc":0,"runs":16,"failed_runs":4,"estimate_s":3600,"secs":203,"start":"2026-10-25T13:21:17Z","end":"2026-10-25T13:24:40Z"}
+{"step":"f07_naut_unpatched_2m","status":"partial","rc":0,"runs":1,"failed_runs":1,"estimate_s":3600,"secs":1,"start":"2026-10-25T13:24:40Z","end":"2026-10-25T13:24:41Z"}
+{"event":"w10_failed","at":"2026-10-25T13:35:06Z","note":"w10 ran 0 of 2000 runs: native_research_benchmark links licensed libreamer_research.so -> license.invalid, exit 0 so step showed ok. Rerun as reruns.sh r07 against libreamer_research_testlib.so via LD_LIBRARY_PATH"}
+{"step":"r01_lean_fixed","status":"ok","rc":0,"runs":16,"failed_runs":0,"estimate_s":600,"secs":174,"start":"2026-10-25T13:35:06Z","end":"2026-10-25T13:38:00Z"}
+{"step":"r02_py_fixed","status":"ok","rc":0,"runs":26,"failed_runs":0,"estimate_s":600,"secs":78,"start":"2026-10-25T13:38:00Z","end":"2026-10-25T13:39:19Z"}
+{"step":"r02b_lean_breadth","status":"ok","rc":0,"runs":1,"failed_runs":0,"estimate_s":600,"secs":20,"start":"2026-10-25T13:39:19Z","end":"2026-10-25T13:39:39Z"}
+{"step":"r03_w01_w02_rerun","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":120,"secs":1,"start":"2026-10-25T13:39:39Z","end":"2026-10-25T13:39:40Z"}
+{"step":"r04_w03_rerun","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":600,"secs":462,"start":"2026-10-25T13:39:40Z","end":"2026-10-25T13:47:22Z"}
+{"step":"r05_w07_ring4096","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":300,"secs":22,"start":"2026-10-25T13:47:22Z","end":"2026-10-25T13:47:44Z"}
+{"step":"r06_clock_probe","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":30,"secs":0,"start":"2026-10-25T13:47:44Z","end":"2026-10-25T13:47:44Z"}
+{"step":"r07_w10_rerun","status":"ok","rc":0,"runs":0,"failed_runs":0,"estimate_s":2400,"secs":1113,"start":"2026-10-25T13:47:44Z","end":"2026-10-25T14:06:17Z"}

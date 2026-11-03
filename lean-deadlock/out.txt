@@ -1,0 +1,6 @@
+workers=128default rc=0 wall=18.144538868 {"engine": "quantconnect_lean", "strategy": "realistic", "n_tickers": 10, "bars": 350640, "run_s": 18.12, "total_s": 18.12, "orders": 8139, "round_trips": 8129, "net_pnl": -1511.98, "steps_processed": | 0 will use 128 workers
+workers=8 rc=0 wall=16.500971983 {"engine": "quantconnect_lean", "strategy": "realistic", "n_tickers": 10, "bars": 350640, "run_s": 16.477, "total_s": 16.477, "orders": 8139, "round_trips": 8129, "net_pnl": -1511.98, "steps_processed | 1 will use 8 workers
+workers=128default rc=0 wall=120.005632060  | 0 will use 128 workers
+workers=8 rc=0 wall=15.819861937 {"engine": "quantconnect_lean", "strategy": "realistic", "n_tickers": 10, "bars": 350640, "run_s": 15.796, "total_s": 15.796, "orders": 8139, "round_trips": 8129, "net_pnl": -1511.98, "steps_processed | 1 will use 8 workers
+workers=128default rc=0 wall=120.005987702  | 0 will use 128 workers
+workers=8 rc=0 wall=120.006077948  | 1 will use 8 workers
