@@ -10,7 +10,7 @@ authors:
     given-names: Chaitanya
     orcid: https://orcid.org/0000-0003-0173-0067
     affiliation: Reamer Labs
-doi: 10.6084/m9.figshare.34785729
+url: https://github.com/j0osman/research-engine-benchmark
 date-released: 2026-10-26
 license: CC-BY-4.0
 repository-code: https://github.com/j0osman/research-engine-benchmark
@@ -30,5 +30,5 @@ preferred-citation:
       given-names: Chaitanya
       orcid: https://orcid.org/0000-0003-0173-0067
       affiliation: Reamer Labs
-  doi: 10.6084/m9.figshare.34787745
+  url: https://reamerlabs.com/papers/what-a-backtest-costs.pdf
   year: 2026

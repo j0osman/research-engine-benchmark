@@ -11,8 +11,7 @@ The other engines ran at their defaults, with every change [listed](#what-was-ch
 
 | | |
 |---|---|
-| Paper | [What a Backtest Costs](https://doi.org/10.6084/m9.figshare.34787745) (preprint) |
-| Archived data | [Figshare dataset](https://doi.org/10.6084/m9.figshare.34785729) |
+| Paper | [What a Backtest Costs](https://reamerlabs.com/papers/what-a-backtest-costs.pdf) (preprint) |
 | Run | One bare-metal server, 2026-10-25 |
 | Versions | Backtrader 1.9.78.123, NautilusTrader 1.231.0, LEAN f3d841e, Reamer Research 4.6.0 |
 
@@ -197,12 +196,12 @@ peak memory, as the published runs did.
 | `code/lean_project/` | LEAN algorithms and config template |
 | `code/analysis/` | `analyze_final.py` rebuilds the tables |
 | `lean-deadlock/` | Hang reproduction scripts and output |
-| `SHA256SUMS` | Checksums, matching the Figshare archive |
+| `SHA256SUMS` | Checksums for the raw results and runners |
 
 Only `README.md`, `CITATION.cff`, `LICENSE`, `.gitignore`, `docs/`,
 `code/bench_runners/make_synthetic_base.py` and
-`code/lean_project/LICENSE-APACHE-2.0.txt` were added here. Everything listed
-in `SHA256SUMS` is byte-identical to the archive.
+`code/lean_project/LICENSE-APACHE-2.0.txt` were added after the run. Everything listed
+in `SHA256SUMS` is the run's unedited output.
 
 **Reading the JSONL.** Each run row has `suite`, `variant` (`reamer_cpp`,
 `reamer_py`, `backtrader`, `nautilus`, `nautilus_p`, `lean`), `strategy`, the
@@ -236,11 +235,11 @@ Python.NET.
 
 Palghadmal, C. (2026). *What a Backtest Costs: Throughput, Memory, Scaling and
 Reproducibility of Four Backtesting Engines on a 64-Core CPU*. Reamer Labs.
-https://doi.org/10.6084/m9.figshare.34787745
+https://reamerlabs.com/papers/what-a-backtest-costs.pdf
 
 ## Licence
 
-[CC BY 4.0](LICENSE), matching the archive. The LEAN-derived files in
+[CC BY 4.0](LICENSE), matching the paper. The LEAN-derived files in
 `code/lean_project/` (`AlgorithmImports.py`, `PandasMapper.py`, `clr.py` and
 `config.template.json`) remain under the
 [Apache License 2.0](code/lean_project/LICENSE-APACHE-2.0.txt).
